@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&family=Michroma&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+p.show {
+    white-space: normal;
+    word-break: break-word;
+    height: 200px;
+    overflow: auto;
+}
+
+
+#swiper1,
+#swiper2 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+
+@layer base {
+    :root {
+        --text: #081321;
+        --background: #dae5f6;
+        --primary: #6d65d7;
+        --secondary: #f5e8d6;
+        --accent: #c1cb34;
+        --border: #0000001a;
+        --Michroma: 'Michroma', sans-serif;
+    }
+
+    .dark {
+        --text: #dee9f7;
+        --background: #091425;
+        --primary: #2f289a;
+        --secondary: #291c0a;
+        --accent: #c1cb34;
+        --border: #ffffff1a;
+    }
+}
+
+.text-linear-gradient {
+    background: -webkit-linear-gradient(120deg, var(--primary), var(--accent));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

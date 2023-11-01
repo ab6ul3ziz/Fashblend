@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Abdulaziz">
+    <title>FashBlend</title>
+    <link rel="icon" href="public/img/logo/unnamed.jpg">
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-background">
+    <header class="border-b border-border py-2">
+        <nav class="flex items-center container mx-auto px-4">
+            <div class="flex-1 flex items-center gap-1">
+                <i class="las la-shopping-bag text-text text-3xl"></i>
+                <h3 class="font-Michroma text-linear-gradient font-bold">
+                    FashBlend
+                </h3>
+            </div>
+            <div class="flex gap-3 items-center">
+                <div>
+                    <div id="theme-div">
+                        <i id="theme-icon"
+                            class="lar la-moon transition ease-in-out text-3xl text-text cursor-pointer hover:text-accent md:hover:scale-150 hover:rotate-[1turn]"></i>
+                    </div>
+                </div>
+                <div id="cart-icon">
+                    <i
+                        class="las la-shopping-cart transition ease-in-out text-3xl text-text cursor-pointer hover:text-accent hover:scale-150"></i>
+                </div>
+            </div>
+        </nav>
+        <div id="cart-product" class="">
+        </div>
+    </header>
+    <section class="py-10">
+        <div class="container mx-auto px-4 flex flex-col-reverse justify-between items-center md:flex-row">
+            <div class="description w-1/2 max-md:w-full xl:w-3/5 swiper-container" id="swiper2">
+                <div class="swiper-wrapper">
+                    <h3 class="text-text my-5 text-2xl xl:text-3xl swiper-slide">
+                        Welcome to <span class="font-Michroma text-linear-gradient font-bold">FashBlend</span>
+                        We are committed to offering a unique shopping experience through our online platform,
+                        where you can discover a wide range of high-quality women's and
+                        men's clothing, along with cutting-edge electronic pieces.
+                    </h3>
+                    <h3 class="text-text my-5 text-2xl xl:text-3xl swiper-slide">
+                        <span class="font-Michroma text-linear-gradient font-bold">FashBlend</span>
+                        is the perfect place for stylishly laid-back looks. This boutique
+                        specializes in high-quality basics and elevated basics. From simple
+                        tees to breezy jumpsuits,
+                        <span class="font-Michroma text-linear-gradient font-bold">FashBlend</span>
+                        is the perfect place to find everyday staples with an on-trend
+                        twist.
+                    </h3>
+                    <h3 class="text-text my-5 text-2xl xl:text-3xl swiper-slide">
+                        We prioritize providing our customers with high-quality products. We collaborate with trusted
+                        brands and reliable suppliers to ensure that you receive items that meet your expectations in
+                        terms of quality and durability.
+                    </h3>
+                    <h3 class="text-text my-5 text-2xl xl:text-3xl swiper-slide">
+                        We understand the importance of prompt order delivery. Hence, we offer a fast and efficient
+                        delivery service, ensuring that your orders are shipped directly to your doorstep. We strive to
+                        provide reliable and timely delivery.
+                    </h3>
+                </div>
+                <a class="py-2 px-4 w-fit m-auto block border text-lg xl:text-2xl text-text border-solid rounded-md border-border transition-all duration-300 ease-in-out hover:border-background hover:bg-secondary"
+                    href="#products">SHOP NOW</a>
+            </div>
+            <div class="w-1/2 xl:w-2/5 swiper-container" id="swiper1">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide"
+                        src="public/img/drawkit-vector-illustration-black-friday-online-shopping-1-65415bf1201e7.webp"
+                        alt="" />
+                    <img class="swiper-slide"
+                        src="public/img/drawkit-vector-illustration-black-friday-online-shopping-2-65415bf5ea4ac.webp"
+                        alt="" />
+                    <img class="swiper-slide"
+                        src="public/img/drawkit-vector-illustration-black-friday-online-shopping-3-65415bf116e21.webp"
+                        alt="" />
+                    <img class="swiper-slide"
+                        src="public/img/drawkit-vector-illustration-black-friday-online-shopping-4-65415bf49f347.webp"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-10" id="products">
+        <div class="container mx-auto px-4">
+            <h1 class="name text-text text-center text-4xl my-9">Products</h1>
+            <label for="underline_select" class="sr-only">Underline select</label>
+            <div class="category relative">
+                <select id="select-box"
+                    class="relative cursor-pointer z-10 block py-2.5 px-0 w-full text-xl text-text border-0 border-b-2 border-border bg-background focus:outline-none focus:ring-0 ">
+                    <option value="all">all</option>
+                    <option selected value="men's clothing">men's clothing</option>
+                    <option value="jewelery">jewelery</option>
+                    <option value="electronics">electronics</option>
+                    <option value="women's clothing">women's clothing</option>
+                </select>
+            </div>
+            <div id="cards-container"
+                class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+            </div>
+        </div>
+    </section>
+    <div id="scroll-to-top"
+        class="fixed flex items-center justify-center transition-all duration-300 ease-in-out bottom-5 bg-primary -right-10 z-50 w-9 h-9 cursor-pointer">
+        <i class="las la-chevron-up text-xl text-white">
+        </i>
+    </div>
+    <footer class="py-4">
+        <div class="container mx-auto px-4 text-center">
+            <a class="text-text text-sm hover:underline" href="https://github.com/ab6ul3ziz">Made By Abdulaziz Salah</a>
+        </div>
+    </footer>
+    <script src="./public/js/swiper.js"></script>
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>
